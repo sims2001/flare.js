@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/flare.js | flare.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A JavaScript background Flare Animation Library"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="flare.js"><meta property="twitter:description" content="A JavaScript background Flare Animation Library"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/sims2001/flare.js"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/flare.js~FlareJS.html">FlareJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/initialiser.js~Initializer.html">Initializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaults">defaults</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-initializer">initializer</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/flare.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { initializer } from &apos;./initialiser.js&apos;;
+
+/**
+ * Welcome to Flare.js!
+ * @param {string} elementId CSS QuerySelector
+ * @param {object} options options object
+ * @returns {object} a new FlareJS object
+ */
+export default class FlareJS {
+    constructor(elementSelector, options) {
+        initializer.load(this, options, elementSelector);
+
+        if (this.initialized) this.initFlares();
+        else console.error(&quot;Couldn&apos;t initialize FlareJS&quot;);
+    }
+
+    /**
+     * Toggle start() and stop() of the FlareJS instance
+     * @public
+     */
+    toggle() {
+        this.isPaused ? this.start() : this.stop();
+    }
+
+    /**
+     * Start FlareEffects and reset all Backgrounds
+     * @public
+     */
+    start() {
+        if (!this.isPaused) return;
+        this.isPaused = false;
+        this.options.onStart(this);
+    }
+
+    /**
+     * Stop FlareEffects and reset all Backgrounds
+     * @public
+     */
+    stop() {
+        if (this.isPaused) return;
+        this.isPaused = true;
+        this.glowElements.forEach((glowObject) =&gt; {
+            this.resetBackground(glowObject);
+        });
+        this.options.onStop(this);
+    }
+
+    /**
+     * Destroy FlareJS and remove all EventHandlers;
+     * @public
+     */
+    destroy() {
+        this.eventHandlers.forEach(({ element, event, eventHandler }) =&gt; {
+            element.removeEventListener(event, eventHandler);
+        });
+        this.eventHandlers = [];
+        this.initialized = false;
+        this.options.onDestroy(this);
+    }
+
+    /**
+     * Reset FlareJS to add EventHandlers to new Elements
+     * @public
+     */
+    reset() {
+        this.destroy();
+        this.options.onReset(this);
+        this.constructor(this.selector, this.options);
+    }
+
+    /**
+     * Initial All FlareEffects
+     * @private
+     */
+    initFlares() {
+        this.glowElements.forEach((glowObject) =&gt; {
+            this.addFlareEvents(glowObject);
+        });
+    }
+
+    /**
+     * Add MouseMove and MouseLeave EventHandler to the given glowObject
+     * @param {object} glowObject Object containing the Element and its default background
+     * @private
+     */
+    addFlareEvents(glowObject) {
+        this.resetBackground(glowObject);
+
+        const { element } = glowObject;
+
+        let glowHandler = (e) =&gt; {};
+
+        if (!this.options.fluentFlares) {
+            glowHandler = (e) =&gt; this.handleFlareEvent(e, glowObject);
+        } else {
+            glowHandler = (e) =&gt; {
+                this.glowElements.forEach((g) =&gt; {
+                    this.handleFlareEvent(e, g);
+                });
+            };
+        }
+
+        element.addEventListener(&apos;mousemove&apos;, glowHandler);
+        const leaveHandler = () =&gt; this.resetBackground(glowObject);
+        element.addEventListener(&apos;mouseleave&apos;, leaveHandler);
+
+        this.eventHandlers.push({ element: element, event: &apos;mousemove&apos;, eventHandler: glowHandler });
+        this.eventHandlers.push({ element: element, event: &apos;mouseleave&apos;, eventHandler: leaveHandler });
+    }
+
+    /**
+     * Set the Elements background to its default Value
+     * @param {object} glowObject Object containing the Element and its default background
+     * @private
+     */
+    resetBackground(glowObject) {
+        if (this.isPaused) return;
+
+        const { element, defaultBackground } = glowObject;
+
+        element.style.background = defaultBackground;
+    }
+
+    /**
+     * Handle the MouseMove Event
+     * @param {event} event MouseMove Event to calculate x and y
+     * @param {object} glowObject Object containing the Element and its default background
+     * @private
+     */
+    handleFlareEvent(event, glowObject) {
+        if (this.isPaused) return;
+
+        const { element, defaultBackground } = glowObject;
+
+        let x = event.pageX - element.offsetLeft;
+        let y = event.pageY + document.querySelector(&apos;body&apos;).scrollTop - element.offsetTop;
+
+        element.style.background = this.generateGradientString(x, y, defaultBackground);
+    }
+
+    /**
+     * Generates
+     * @param {number} x the x position of the FlareEffect
+     * @param {number} y the y position of the FlareEffect
+     * @param {string} background the background color of the current element;
+     * @private
+     */
+    generateGradientString(x, y, background) {
+        const xy = x + &apos; &apos; + y;
+        return `radial-gradient(circle ${this.glowRadius}px at ${x}px ${y}px, ${this.flareColor}, ${background})`;
+    }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

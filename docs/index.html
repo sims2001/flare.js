@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | flare.js</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="A JavaScript background Flare Animation Library"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="flare.js"><meta property="twitter:description" content="A JavaScript background Flare Animation Library"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/sims2001/flare.js"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/flare.js~FlareJS.html">FlareJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/initialiser.js~Initializer.html">Initializer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaults">defaults</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-initializer">initializer</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="flare-js">Flare.js</h1><p><img src="https://raw.githubusercontent.com/sims2001/flare.js/master/FlareJS.png" width="450px" title="Flare.js"></p>
+<p>Flare.js is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.</p>
+<hr>
+<h2 id="installation">Installation</h2><h3 id="cdn">CDN</h3><pre><code class="lang-html"><code class="source-code prettyprint">&lt;script src=&quot;https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js&quot;&gt;&lt;/script&gt;</code>
+</code></pre>
+<p>For use directly in the browser via <code>&lt;script&gt;</code> tag:</p>
+<pre><code class="lang-html"><code class="source-code prettyprint">  &lt;!-- Element to contain animated typing --&gt;
+  &lt;div class=&quot;background&quot;&gt;&lt;/div&gt;
+
+  &lt;!-- Load library from the CDN --&gt;
+  &lt;script src=&quot;https://unpkg.com/typed.js@1.0.0/dist/flarejs.umd.js&quot;&gt;&lt;/script&gt;
+
+  &lt;!-- Setup and start animation! --&gt;
+  &lt;script&gt;
+      const flare = new FlareJS(&apos;.background&apos;, {
+          glowRadius: 75,
+          flareColor: &apos;#ffaa0075&apos;,
+      });
+  &lt;/script&gt;
+&lt;/body&gt;</code>
+</code></pre>
+<h3 id="as-an-esmodule">As an ESModule</h3><p>For use with a build tool like <a href="https://vitejs.dev/">Vite</a>, and/or in a React application, install with NPM or Yarn.</p>
+<h4 id="npm">NPM</h4><pre><code><code class="source-code prettyprint">npm install flare.js</code>
+</code></pre><h4 id="yarn">Yarn</h4><pre><code><code class="source-code prettyprint">yarn add flare.js</code>
+</code></pre><h4 id="general-esm-usage">General ESM Usage</h4><pre><code class="lang-js"><code class="source-code prettyprint">import FlareJS from &apos;flare.js&apos;;
+
+const flare = new FlareJS(&apos;.background&apos;, {
+    glowRadius: 75,
+    flareColor: &apos;#ffaa0075&apos;,
+});</code>
+</code></pre>
+<h2 id="customization">Customization</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">const flare = new FlareJs(&apos;.background&apos;, {
+  /**
+   * @property {array} strings strings to be typed
+   * @property {string} stringsElement ID of element containing string children
+   */
+  strings: [
+    &apos;These are the default values...&apos;,
+    &apos;You know what you should do?&apos;,
+    &apos;Use your own!&apos;,
+    &apos;Have a great day!&apos;,
+  ],
+    /**
+     * @property {number} glowRadius Radius of the FlareEffect in px
+     */
+    glowRadius: 50,
+    /**
+     * @property {string|null} bgColor CSS Color used as elements background color  
+     * (if null current background color is used)
+     */
+    bgColor: null,
+    /**
+     * @property {string} flareColor CSS Color for the FlareEffect 
+     */
+    flareColor: &apos;rgba(254, 1, 154, 0.5)&apos;,
+    /**
+     * Experimental!
+     * @property {boolean} fluentFlares smooth Flares between all Elements of selector
+     */
+    fluentFlares: false,
+    /**
+     * After destroy
+     * @param {FlareJs} self
+     */
+    onDestroy: (self) =&gt; {},
+    /**
+     * After reset
+     * @param {FlareJs} self
+     */
+    onReset: (self) =&gt; {},
+    /**
+     * After stop
+     * @param {FlareJs} self
+     */
+    onStop: (self) =&gt; {},
+    /**
+     * After start
+     * @param {FlareJs} self
+     */
+    onStart: (self) =&gt; {},
+});</code>
+</code></pre>
+<h2 id="contributing">Contributing</h2><h3 id="-a-href-----github-contributing-md--view-contribution-guidelines--a-"><a href="./.github/CONTRIBUTING.md">View Contribution Guidelines</a></h3><h2 id="end">end</h2><p>Thanks for checking this out. </p>
+<p>If you&apos;re using this, let me know! I&apos;d love to see it.</p>
+<p>It would also be great if you mentioned me or my website somewhere. <a href="https://www.rutschka.at">www.rutschka.at</a></p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

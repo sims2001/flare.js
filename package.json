@@ -1,10 +1,10 @@
 {
     "name": "flare.js",
-    "version": "0.2.0",
-    "homepage": "https://github.com/sims2001/flarejs",
-    "repository": "https://github.com/sims2001/flarejs",
+    "version": "1.0.0",
+    "homepage": "https://github.com/sims2001/flare.js",
+    "repository": "https://github.com/sims2001/flare.js",
     "bugs": {
-        "url": "https://github.com/sims2001/flarejs/issues"
+        "url": "https://github.com/sims2001/flare.js/issues"
     },
     "license": "MIT",
     "author": "Simon Rutschka",
@@ -30,12 +30,14 @@
         "shimmer"
     ],
     "devDependencies": {
+        "esdoc": "^1.1.0",
+        "esdoc-standard-plugin": "^1.0.0",
         "microbundle": "^0.15.1",
         "prettier": "3.3.3"
     },
     "scripts": {
         "build": "microbundle --name=FlareJS --external none",
-        "dev": "microbundle --name=FlareJS watch"
+        "dev": "microbundle --name=FlareJS --external none watch"
     },
     "dependencies": {
         "css-color-converter": "^2.0.0"

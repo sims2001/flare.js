@@ -10,7 +10,8 @@ class Initializer {
             return;
         }
 
-        self.options = { ...defaults, ...options };
+        self.options = Object.assign({}, defaults, options);
+        //self.options = { ...defaults, ...options };
 
         //SETUP ELEMENTS
         self.glowElements = [];

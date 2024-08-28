@@ -1,0 +1,30 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.base {
+    background: slategray;
+    min-height: 250px;
+}
+
+.experimental {
+    height: 200px;
+    padding: 0;
+}
+
+.experimental-first {
+    background: #00aaff;
+}
+
+.experimental-second {
+    background: #999999;
+}
+
+.experimental-third {
+    background: darkviolet;
+}
+
+.experimental-fourth {
+    background: ivory;
+}

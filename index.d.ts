@@ -1,7 +1,7 @@
 declare module 'flare.js' {
     export interface FlareOptions {
         /**
-         * radius of the FlareEffect
+         * Radius of the FlareEffect in px
          */
         glowRadius?: number;
         /**

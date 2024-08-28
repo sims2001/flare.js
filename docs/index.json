@@ -1,0 +1,1051 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/defaults.js",
+    "content": "const defaults = {\n    glowRadius: 50,\n    bgColor: null,\n    flareColor: 'rgba(254, 1, 154, 0.5)',\n    fluentFlares: false,\n    onDestroy: (self) => {},\n    onReset: (self) => {},\n    onStop: (self) => {},\n    onStart: (self) => {},\n};\n\nexport default defaults;\n",
+    "static": true,
+    "longname": "/home/simon/Desktop/Projects/flarejs/src/defaults.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "defaults",
+    "memberof": "src/defaults.js",
+    "static": true,
+    "longname": "src/defaults.js~defaults",
+    "access": "public",
+    "export": true,
+    "importPath": "flare.js/src/defaults.js",
+    "importStyle": "defaults",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"glowRadius\": number, \"bgColor\": *, \"flareColor\": string, \"fluentFlares\": *, \"onDestroy\": *, \"onReset\": *, \"onStop\": *, \"onStart\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "src/flare.js",
+    "content": "import { initializer } from './initialiser.js';\n\n/**\n * Welcome to Flare.js!\n * @param {string} elementId CSS QuerySelector\n * @param {object} options options object\n * @returns {object} a new FlareJS object\n */\nexport default class FlareJS {\n    constructor(elementSelector, options) {\n        initializer.load(this, options, elementSelector);\n\n        if (this.initialized) this.initFlares();\n        else console.error(\"Couldn't initialize FlareJS\");\n    }\n\n    /**\n     * Toggle start() and stop() of the FlareJS instance\n     * @public\n     */\n    toggle() {\n        this.isPaused ? this.start() : this.stop();\n    }\n\n    /**\n     * Start FlareEffects and reset all Backgrounds\n     * @public\n     */\n    start() {\n        if (!this.isPaused) return;\n        this.isPaused = false;\n        this.options.onStart(this);\n    }\n\n    /**\n     * Stop FlareEffects and reset all Backgrounds\n     * @public\n     */\n    stop() {\n        if (this.isPaused) return;\n        this.isPaused = true;\n        this.glowElements.forEach((glowObject) => {\n            this.resetBackground(glowObject);\n        });\n        this.options.onStop(this);\n    }\n\n    /**\n     * Destroy FlareJS and remove all EventHandlers;\n     * @public\n     */\n    destroy() {\n        this.eventHandlers.forEach(({ element, event, eventHandler }) => {\n            element.removeEventListener(event, eventHandler);\n        });\n        this.eventHandlers = [];\n        this.initialized = false;\n        this.options.onDestroy(this);\n    }\n\n    /**\n     * Reset FlareJS to add EventHandlers to new Elements\n     * @public\n     */\n    reset() {\n        this.destroy();\n        this.options.onReset(this);\n        this.constructor(this.selector, this.options);\n    }\n\n    /**\n     * Initial All FlareEffects\n     * @private\n     */\n    initFlares() {\n        this.glowElements.forEach((glowObject) => {\n            this.addFlareEvents(glowObject);\n        });\n    }\n\n    /**\n     * Add MouseMove and MouseLeave EventHandler to the given glowObject\n     * @param {object} glowObject Object containing the Element and its default background\n     * @private\n     */\n    addFlareEvents(glowObject) {\n        this.resetBackground(glowObject);\n\n        const { element } = glowObject;\n\n        let glowHandler = (e) => {};\n\n        if (!this.options.fluentFlares) {\n            glowHandler = (e) => this.handleFlareEvent(e, glowObject);\n        } else {\n            glowHandler = (e) => {\n                this.glowElements.forEach((g) => {\n                    this.handleFlareEvent(e, g);\n                });\n            };\n        }\n\n        element.addEventListener('mousemove', glowHandler);\n        const leaveHandler = () => this.resetBackground(glowObject);\n        element.addEventListener('mouseleave', leaveHandler);\n\n        this.eventHandlers.push({ element: element, event: 'mousemove', eventHandler: glowHandler });\n        this.eventHandlers.push({ element: element, event: 'mouseleave', eventHandler: leaveHandler });\n    }\n\n    /**\n     * Set the Elements background to its default Value\n     * @param {object} glowObject Object containing the Element and its default background\n     * @private\n     */\n    resetBackground(glowObject) {\n        if (this.isPaused) return;\n\n        const { element, defaultBackground } = glowObject;\n\n        element.style.background = defaultBackground;\n    }\n\n    /**\n     * Handle the MouseMove Event\n     * @param {event} event MouseMove Event to calculate x and y\n     * @param {object} glowObject Object containing the Element and its default background\n     * @private\n     */\n    handleFlareEvent(event, glowObject) {\n        if (this.isPaused) return;\n\n        const { element, defaultBackground } = glowObject;\n\n        let x = event.pageX - element.offsetLeft;\n        let y = event.pageY + document.querySelector('body').scrollTop - element.offsetTop;\n\n        element.style.background = this.generateGradientString(x, y, defaultBackground);\n    }\n\n    /**\n     * Generates\n     * @param {number} x the x position of the FlareEffect\n     * @param {number} y the y position of the FlareEffect\n     * @param {string} background the background color of the current element;\n     * @private\n     */\n    generateGradientString(x, y, background) {\n        const xy = x + ' ' + y;\n        return `radial-gradient(circle ${this.glowRadius}px at ${x}px ${y}px, ${this.flareColor}, ${background})`;\n    }\n}\n",
+    "static": true,
+    "longname": "/home/simon/Desktop/Projects/flarejs/src/flare.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "class",
+    "name": "FlareJS",
+    "memberof": "src/flare.js",
+    "static": true,
+    "longname": "src/flare.js~FlareJS",
+    "access": "public",
+    "export": true,
+    "importPath": "flare.js/src/flare.js",
+    "importStyle": "FlareJS",
+    "description": "Welcome to Flare.js!",
+    "lineNumber": 9,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{object} a new FlareJS object"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "elementId",
+        "description": "CSS QuerySelector"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "options object"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "object"
+      ],
+      "spread": false,
+      "description": "a new FlareJS object"
+    },
+    "interface": false
+  },
+  {
+    "__docId__": 52,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true
+  },
+  {
+    "__docId__": 53,
+    "kind": "method",
+    "name": "toggle",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#toggle",
+    "access": "public",
+    "description": "Toggle start() and stop() of the FlareJS instance",
+    "lineNumber": 21,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "start",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#start",
+    "access": "public",
+    "description": "Start FlareEffects and reset all Backgrounds",
+    "lineNumber": 29,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 55,
+    "kind": "member",
+    "name": "isPaused",
+    "memberof": "src/flare.js~FlareJS",
+    "static": false,
+    "longname": "src/flare.js~FlareJS#isPaused",
+    "access": "public",
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "stop",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#stop",
+    "access": "public",
+    "description": "Stop FlareEffects and reset all Backgrounds",
+    "lineNumber": 39,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "destroy",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#destroy",
+    "access": "public",
+    "description": "Destroy FlareJS and remove all EventHandlers;",
+    "lineNumber": 52,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "member",
+    "name": "eventHandlers",
+    "memberof": "src/flare.js~FlareJS",
+    "static": false,
+    "longname": "src/flare.js~FlareJS#eventHandlers",
+    "access": "public",
+    "description": null,
+    "lineNumber": 56,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*[]"
+      ]
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "member",
+    "name": "initialized",
+    "memberof": "src/flare.js~FlareJS",
+    "static": false,
+    "longname": "src/flare.js~FlareJS#initialized",
+    "access": "public",
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "reset",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#reset",
+    "access": "public",
+    "description": "Reset FlareJS to add EventHandlers to new Elements",
+    "lineNumber": 65,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "initFlares",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#initFlares",
+    "access": "private",
+    "description": "Initial All FlareEffects",
+    "lineNumber": 75,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "addFlareEvents",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#addFlareEvents",
+    "access": "private",
+    "description": "Add MouseMove and MouseLeave EventHandler to the given glowObject",
+    "lineNumber": 86,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "glowObject",
+        "description": "Object containing the Element and its default background"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "resetBackground",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#resetBackground",
+    "access": "private",
+    "description": "Set the Elements background to its default Value",
+    "lineNumber": 116,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "glowObject",
+        "description": "Object containing the Element and its default background"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "handleFlareEvent",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#handleFlareEvent",
+    "access": "private",
+    "description": "Handle the MouseMove Event",
+    "lineNumber": 130,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "event"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "event",
+        "description": "MouseMove Event to calculate x and y"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "glowObject",
+        "description": "Object containing the Element and its default background"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "generateGradientString",
+    "memberof": "src/flare.js~FlareJS",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/flare.js~FlareJS#generateGradientString",
+    "access": "private",
+    "description": "Generates",
+    "lineNumber": 148,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "x",
+        "description": "the x position of the FlareEffect"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "number"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "y",
+        "description": "the y position of the FlareEffect"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "background",
+        "description": "the background color of the current element;"
+      }
+    ],
+    "return": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "file",
+    "name": "src/initialiser.js",
+    "content": "import defaults from './defaults.js';\nimport { fromString } from 'css-color-converter';\n\nclass Initializer {\n    load(self, options, selector) {\n        self.selector = selector;\n\n        const elements = document.querySelectorAll(selector);\n        if (!elements.length) {\n            return;\n        }\n\n        self.options = Object.assign({}, defaults, options);\n        //self.options = { ...defaults, ...options };\n\n        //SETUP ELEMENTS\n        self.glowElements = [];\n        elements.forEach((ele) => {\n            const elementBackground = window.getComputedStyle(ele, null).getPropertyValue('background-color');\n\n            let configBackground = self.options.bgColor;\n\n            if (configBackground !== null) {\n                configBackground = fromString(configBackground).toRgbString();\n            }\n\n            const background = configBackground === null ? elementBackground : configBackground;\n\n            const newGlowElement = {\n                element: ele,\n                defaultBackground: background,\n            };\n\n            self.glowElements.push(newGlowElement);\n        });\n\n        self.glowRadius = self.options.glowRadius;\n        self.flareColor = fromString(self.options.flareColor).toRgbString();\n\n        self.eventHandlers = [];\n\n        self.isPaused = false;\n\n        self.initialized = true;\n    }\n}\n\nexport const initializer = new Initializer();\n",
+    "static": true,
+    "longname": "/home/simon/Desktop/Projects/flarejs/src/initialiser.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 68,
+    "kind": "variable",
+    "name": "initializer",
+    "memberof": "src/initialiser.js",
+    "static": true,
+    "longname": "src/initialiser.js~initializer",
+    "access": "public",
+    "export": true,
+    "importPath": "flare.js/src/initialiser.js",
+    "importStyle": "{initializer}",
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/initialiser.js~Initializer"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "class",
+    "name": "Initializer",
+    "memberof": "src/initialiser.js",
+    "static": true,
+    "longname": "src/initialiser.js~Initializer",
+    "access": "public",
+    "export": true,
+    "importPath": "flare.js/src/initialiser.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "pseudoExport": true,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "load",
+    "memberof": "src/initialiser.js~Initializer",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/initialiser.js~Initializer#load",
+    "access": "public",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "self",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "selector",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "kind": "index",
+    "content": "# Flare.js\n\n<img src=\"https://raw.githubusercontent.com/sims2001/flare.js/master/FlareJS.png\" width=\"450px\" title=\"Flare.js\" />\n\nFlare.js is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.\n\n---\n\n## Installation\n### CDN\n\n```html\n<script src=\"https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js\"></script>\n```\n\nFor use directly in the browser via `<script>` tag:\n\n```html\n  <!-- Element to contain animated typing -->\n  <div class=\"background\"></div>\n\n  <!-- Load library from the CDN -->\n  <script src=\"https://unpkg.com/typed.js@1.0.0/dist/flarejs.umd.js\"></script>\n\n  <!-- Setup and start animation! -->\n  <script>\n      const flare = new FlareJS('.background', {\n          glowRadius: 75,\n          flareColor: '#ffaa0075',\n      });\n  </script>\n</body>\n```\n\n### As an ESModule\n\nFor use with a build tool like [Vite](https://vitejs.dev/), and/or in a React application, install with NPM or Yarn.\n\n#### NPM\n\n```\nnpm install flare.js\n```\n\n#### Yarn\n\n```\nyarn add flare.js\n```\n\n#### General ESM Usage\n\n```js\nimport FlareJS from 'flare.js';\n\nconst flare = new FlareJS('.background', {\n    glowRadius: 75,\n    flareColor: '#ffaa0075',\n});\n```\n## Customization\n\n```javascript\nconst flare = new FlareJs('.background', {\n  /**\n   * @property {array} strings strings to be typed\n   * @property {string} stringsElement ID of element containing string children\n   */\n  strings: [\n    'These are the default values...',\n    'You know what you should do?',\n    'Use your own!',\n    'Have a great day!',\n  ],\n    /**\n     * @property {number} glowRadius Radius of the FlareEffect in px\n     */\n    glowRadius: 50,\n    /**\n     * @property {string|null} bgColor CSS Color used as elements background color  \n     * (if null current background color is used)\n     */\n    bgColor: null,\n    /**\n     * @property {string} flareColor CSS Color for the FlareEffect \n     */\n    flareColor: 'rgba(254, 1, 154, 0.5)',\n    /**\n     * Experimental!\n     * @property {boolean} fluentFlares smooth Flares between all Elements of selector\n     */\n    fluentFlares: false,\n    /**\n     * After destroy\n     * @param {FlareJs} self\n     */\n    onDestroy: (self) => {},\n    /**\n     * After reset\n     * @param {FlareJs} self\n     */\n    onReset: (self) => {},\n    /**\n     * After stop\n     * @param {FlareJs} self\n     */\n    onStop: (self) => {},\n    /**\n     * After start\n     * @param {FlareJs} self\n     */\n    onStart: (self) => {},\n});\n```\n\n\n## Contributing\n\n### [View Contribution Guidelines](./.github/CONTRIBUTING.md)\n\n## end\n\nThanks for checking this out. \n\nIf you're using this, let me know! I'd love to see it.\n\nIt would also be great if you mentioned me or my website somewhere. [www.rutschka.at](https://www.rutschka.at)\n",
+    "longname": "/home/simon/Desktop/Projects/flarejs/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n    \"name\": \"flare.js\",\n    \"version\": \"1.0.0\",\n    \"homepage\": \"https://github.com/sims2001/flare.js\",\n    \"repository\": \"https://github.com/sims2001/flare.js\",\n    \"bugs\": {\n        \"url\": \"https://github.com/sims2001/flare.js/issues\"\n    },\n    \"license\": \"MIT\",\n    \"author\": \"Simon Rutschka\",\n    \"description\": \"A JavaScript background Flare Animation Library\",\n    \"type\": \"module\",\n    \"source\": \"src/flare.js\",\n    \"types\": \"./index.d.ts\",\n    \"files\": [\n        \"dist\",\n        \"index.d.ts\"\n    ],\n    \"exports\": {\n        \"require\": \"./dist/flarejs.cjs\",\n        \"import\": \"./dist/flarejs.module.js\",\n        \"types\": \"./index.d.ts\"\n    },\n    \"main\": \"./dist/flarejs.cjs\",\n    \"module\": \"./dist/flarejs.module.js\",\n    \"keywords\": [\n        \"flarejs\",\n        \"animation\",\n        \"background-flare\",\n        \"shimmer\"\n    ],\n    \"devDependencies\": {\n        \"esdoc\": \"^1.1.0\",\n        \"esdoc-standard-plugin\": \"^1.0.0\",\n        \"microbundle\": \"^0.15.1\",\n        \"prettier\": \"3.3.3\"\n    },\n    \"scripts\": {\n        \"build\": \"microbundle --name=FlareJS --external none\",\n        \"dev\": \"microbundle --name=FlareJS --external none watch\"\n    },\n    \"dependencies\": {\n        \"css-color-converter\": \"^2.0.0\"\n    }\n}\n",
+    "longname": "/home/simon/Desktop/Projects/flarejs/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
