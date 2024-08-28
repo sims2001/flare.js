@@ -37,17 +37,17 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="flare-js">Flare.js</h1><p><img src="https://raw.githubusercontent.com/sims2001/flare.js/master/FlareJS.png" width="450px" title="Flare.js"></p>
-<p>Flare.js is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.</p>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="flare-js">Flare.js</h1><p><img src="https://raw.githubusercontent.com/sims2001/flare.js/master/FlareJS.png" width="900px" title="Flare.js"></p>
+<h3 id="-a-href--https---sims2001-github-io-flare-js---view-demos--a-----a-href--https---sims2001-github-io-flare-js-docs--view-full-docs--a-----a-href--https---www-rutschka-at--rutschka-at--a-"><a href="https://sims2001.github.io/flare.js/">View Demos</a> | <a href="https://sims2001.github.io/flare.js/docs">View Full Docs</a> | <a href="https://www.rutschka.at">rutschka.at</a></h3><p>Flare.js is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.</p>
 <hr>
-<h2 id="installation">Installation</h2><h3 id="cdn">CDN</h3><pre><code class="lang-html"><code class="source-code prettyprint">&lt;script src=&quot;https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js&quot;&gt;&lt;/script&gt;</code>
+<h2 id="installation">Installation</h2><h3 id="cdn">CDN</h3><pre><code class="lang-html"><code class="source-code prettyprint">&lt;script src=&quot;https://unpkg.com/flare.js@1.0.0/dist/flarejs.umd.js&quot;&gt;&lt;/script&gt;</code>
 </code></pre>
 <p>For use directly in the browser via <code>&lt;script&gt;</code> tag:</p>
 <pre><code class="lang-html"><code class="source-code prettyprint">  &lt;!-- Element to contain animated typing --&gt;
   &lt;div class=&quot;background&quot;&gt;&lt;/div&gt;
 
   &lt;!-- Load library from the CDN --&gt;
-  &lt;script src=&quot;https://unpkg.com/typed.js@1.0.0/dist/flarejs.umd.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://unpkg.com/flare.js@1.0.0/dist/flarejs.umd.js&quot;&gt;&lt;/script&gt;
 
   &lt;!-- Setup and start animation! --&gt;
   &lt;script&gt;
@@ -69,16 +69,6 @@ const flare = new FlareJS(&apos;.background&apos;, {
 });</code>
 </code></pre>
 <h2 id="customization">Customization</h2><pre><code class="lang-javascript"><code class="source-code prettyprint">const flare = new FlareJs(&apos;.background&apos;, {
-  /**
-   * @property {array} strings strings to be typed
-   * @property {string} stringsElement ID of element containing string children
-   */
-  strings: [
-    &apos;These are the default values...&apos;,
-    &apos;You know what you should do?&apos;,
-    &apos;Use your own!&apos;,
-    &apos;Have a great day!&apos;,
-  ],
     /**
      * @property {number} glowRadius Radius of the FlareEffect in px
      */
