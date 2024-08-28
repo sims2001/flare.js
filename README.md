@@ -13,7 +13,7 @@ FlareJS is small JavaScript Library that allows the user to add a radiant backgr
 ### CDN
 
 ```html
-<script src="https://unpkg.com/flarejs@1.0.0/dist/flarejs.umd.js"></script>
+<script src="https://unpkg.com/@sims2001/flarejs@1.0.0/dist/flarejs.umd.js"></script>
 ```
 
 For use directly in the browser via `<script>` tag:
@@ -23,7 +23,7 @@ For use directly in the browser via `<script>` tag:
   <div class="background"></div>
 
   <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/flarejs@1.0.0/dist/flarejs.umd.js"></script>
+  <script src="https://unpkg.com/@sims2001/flarejs@1.0.0/dist/flarejs.umd.js"></script>
 
   <!-- Setup and start animation! -->
   <script>
@@ -54,7 +54,7 @@ yarn add flarejs
 #### General ESM Usage
 
 ```js
-import FlareJS from 'flarejs';
+import FlareJS from '@sims2001/flarejs';
 
 const flare = new FlareJS('.background', {
     glowRadius: 75,

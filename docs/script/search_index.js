@@ -1,26 +1,26 @@
 window.esdocSearchIndex = [
     [
-        'flarejs/src/flare.js~flarejs',
+        '@sims2001/flarejs/src/flare.js~flarejs',
         'class/src/flare.js~FlareJS.html',
-        '<span>FlareJS</span> <span class="search-result-import-path">flarejs/src/flare.js</span>',
+        '<span>FlareJS</span> <span class="search-result-import-path">@sims2001/flarejs/src/flare.js</span>',
         'class',
     ],
     [
-        'flarejs/src/initialiser.js~initializer',
+        '@sims2001/flarejs/src/initialiser.js~initializer',
         'class/src/initialiser.js~Initializer.html',
-        '<span>Initializer</span> <span class="search-result-import-path">flarejs/src/initialiser.js</span>',
+        '<span>Initializer</span> <span class="search-result-import-path">@sims2001/flarejs/src/initialiser.js</span>',
         'class',
     ],
     [
-        'flarejs/src/defaults.js~defaults',
+        '@sims2001/flarejs/src/defaults.js~defaults',
         'variable/index.html#static-variable-defaults',
-        '<span>defaults</span> <span class="search-result-import-path">flarejs/src/defaults.js</span>',
+        '<span>defaults</span> <span class="search-result-import-path">@sims2001/flarejs/src/defaults.js</span>',
         'variable',
     ],
     [
-        'flarejs/src/initialiser.js~initializer',
+        '@sims2001/flarejs/src/initialiser.js~initializer',
         'variable/index.html#static-variable-initializer',
-        '<span>initializer</span> <span class="search-result-import-path">flarejs/src/initialiser.js</span>',
+        '<span>initializer</span> <span class="search-result-import-path">@sims2001/flarejs/src/initialiser.js</span>',
         'variable',
     ],
     [
