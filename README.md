@@ -1,6 +1,9 @@
 # Flare.js
 
-<img src="https://raw.githubusercontent.com/sims2001/flare.js/master/FlareJS.png" width="450px" title="Flare.js" />
+<img src="https://raw.githubusercontent.com/sims2001/flare.js/master/FlareJS.png" width="900px" title="Flare.js" />
+
+### [View Demos](https://sims2001.github.io/flare.js/) | [View Full Docs](https://sims2001.github.io/flare.js/docs) | [rutschka.at](https://www.rutschka.at)
+
 
 Flare.js is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.
 
@@ -10,7 +13,7 @@ Flare.js is small JavaScript Library that allows the user to add a radiant backg
 ### CDN
 
 ```html
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/flare.js@1.0.0/dist/flarejs.umd.js"></script>
 ```
 
 For use directly in the browser via `<script>` tag:
@@ -20,7 +23,7 @@ For use directly in the browser via `<script>` tag:
   <div class="background"></div>
 
   <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/typed.js@1.0.0/dist/flarejs.umd.js"></script>
+  <script src="https://unpkg.com/flare.js@1.0.0/dist/flarejs.umd.js"></script>
 
   <!-- Setup and start animation! -->
   <script>
@@ -62,16 +65,6 @@ const flare = new FlareJS('.background', {
 
 ```javascript
 const flare = new FlareJs('.background', {
-  /**
-   * @property {array} strings strings to be typed
-   * @property {string} stringsElement ID of element containing string children
-   */
-  strings: [
-    'These are the default values...',
-    'You know what you should do?',
-    'Use your own!',
-    'Have a great day!',
-  ],
     /**
      * @property {number} glowRadius Radius of the FlareEffect in px
      */
