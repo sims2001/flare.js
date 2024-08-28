@@ -4,7 +4,7 @@
 Filling out this template is required.
 -->
 
-- [ ] Have you viewed your changes locally on the demos page, located on https://github.com/sims2001/flare.js/blob/master/index.html?
+- [ ] Have you viewed your changes locally on the demos page, located on https://github.com/sims2001/flarejs/blob/master/index.html?
 
 - [ ] If necessary, have you added a new demo to the index.html list of demos? If it's an improvement or small addition, have you added it to an existing demo on the demos page?
 

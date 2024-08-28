@@ -1,11 +1,11 @@
-# Flare.js
+# FlareJS
 
-<img src="https://raw.githubusercontent.com/sims2001/flare.js/master/FlareJS.png" width="900px" title="Flare.js" />
+<img src="https://raw.githubusercontent.com/sims2001/flarejs/master/FlareJS.png" width="900px" title="FlareJS" />
 
-### [View Demos](https://sims2001.github.io/flare.js/) | [View Full Docs](https://sims2001.github.io/flare.js/docs) | [rutschka.at](https://www.rutschka.at)
+### [View Demos](https://sims2001.github.io/flarejs/) | [View Full Docs](https://sims2001.github.io/flarejs/docs) | [rutschka.at](https://www.rutschka.at)
 
 
-Flare.js is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.
+FlareJS is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.
 
 ---
 
@@ -13,7 +13,7 @@ Flare.js is small JavaScript Library that allows the user to add a radiant backg
 ### CDN
 
 ```html
-<script src="https://unpkg.com/flare.js@1.0.0/dist/flarejs.umd.js"></script>
+<script src="https://unpkg.com/flarejs@1.0.0/dist/flarejs.umd.js"></script>
 ```
 
 For use directly in the browser via `<script>` tag:
@@ -23,7 +23,7 @@ For use directly in the browser via `<script>` tag:
   <div class="background"></div>
 
   <!-- Load library from the CDN -->
-  <script src="https://unpkg.com/flare.js@1.0.0/dist/flarejs.umd.js"></script>
+  <script src="https://unpkg.com/flarejs@1.0.0/dist/flarejs.umd.js"></script>
 
   <!-- Setup and start animation! -->
   <script>
@@ -42,19 +42,19 @@ For use with a build tool like [Vite](https://vitejs.dev/), and/or in a React ap
 #### NPM
 
 ```
-npm install flare.js
+npm install flarejs
 ```
 
 #### Yarn
 
 ```
-yarn add flare.js
+yarn add flarejs
 ```
 
 #### General ESM Usage
 
 ```js
-import FlareJS from 'flare.js';
+import FlareJS from 'flarejs';
 
 const flare = new FlareJS('.background', {
     glowRadius: 75,

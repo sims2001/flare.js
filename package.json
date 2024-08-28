@@ -1,10 +1,13 @@
 {
-    "name": "flare.js",
+    "name": "flarejs",
     "version": "1.0.0",
-    "homepage": "https://github.com/sims2001/flare.js",
-    "repository": "https://github.com/sims2001/flare.js",
+    "homepage": "https://github.com/sims2001/flarejs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sims2001/flarejs.git"
+    },
     "bugs": {
-        "url": "https://github.com/sims2001/flare.js/issues"
+        "url": "https://github.com/sims2001/flarejs/issues"
     },
     "license": "MIT",
     "author": "Simon Rutschka",

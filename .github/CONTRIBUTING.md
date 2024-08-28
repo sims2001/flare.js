@@ -8,8 +8,8 @@ I greatly appreciate anyone taking the time to help make Typed.js better.
 
 First, clone the repo onto your local machine.
 ```
-git clone git@github.com:sims2001/flare.js.git
-cd flare.js
+git clone git@github.com:sims2001/flarejs.git
+cd flarejs
 ```
 
 Then, make sure you have all the development dependencies installed.

@@ -1,4 +1,4 @@
-declare module 'flare.js' {
+declare module 'flarejs' {
     export interface FlareOptions {
         /**
          * Radius of the FlareEffect in px
