@@ -1,6 +1,7 @@
 import defaults from './defaults.js'
 import { fromString } from "css-color-converter";
 
+
 class Initializer {
     load(self, options, selector) {
         self.selector = selector;
@@ -28,7 +29,7 @@ class Initializer {
 
             const newGlowElement = {
                 element: ele,
-                background: background
+                defaultBackground: background
             }
 
             self.glowElements.push( newGlowElement );
@@ -37,6 +38,10 @@ class Initializer {
 
         self.glowRadius = self.options.glowRadius;
         self.flareColor = fromString( self.options.flareColor ).toRgbString();
+
+        self.eventHandlers = [];
+
+        self.isPaused = false;
 
         self.initialized = true;
     }

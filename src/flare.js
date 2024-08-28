@@ -1,5 +1,13 @@
 import {initializer} from './initialiser.js'
 
+
+
+/**
+ * Welcome to Flare.js!
+ * @param {string} elementId CSS QuerySelector
+ * @param {object} options options object
+ * @returns {object} a new FlareJS object
+ */
 export default class FlareJS {
     constructor(elementSelector, options) {
         initializer.load(this, options, elementSelector)
@@ -8,43 +16,126 @@ export default class FlareJS {
         else console.error("Couldn't initialize FlareJS");
     }
 
+    /**
+     * Toggle start() and stop() of the FlareJS instance
+     * @public
+     */
+    toggle() {
+        this.isPaused ? this.start() : this.stop();
+    }
+
+    /**
+     * Start FlareEffects and reset all Backgrounds
+     * @public
+     */
+    start() {
+        if(! this.isPaused) return;
+        this.isPaused = false;
+        this.options.onStart(this);
+    }
+
+    /**
+     * Stop FlareEffects and reset all Backgrounds
+     * @public
+     */
+    stop() {
+        if(this.isPaused) return;
+        this.isPaused = true;
+        this.glowElements.forEach((glowObject) => { this.resetBackground(glowObject) });
+        this.options.onStop(this);
+    }
+
+
+    /**
+     * Destroy FlareJS and remove all EventHandlers;
+     * @public
+     */
+    destroy()  {
+        this.eventHandlers.forEach(({ element, event, eventHandler }) => {
+            element.removeEventListener(event, eventHandler);
+        });
+        this.eventHandlers = [];
+        this.initialized = false;
+        this.options.onDestroy(this);
+    }
+
+
+    /**
+     * Reset FlareJS to add EventHandlers to new Elements
+     * @public
+     */
+    reset() {
+        this.destroy();
+        this.options.onReset(this);
+        this.constructor(this.selector, this.options);
+    }
+
+    /**
+     * Initial All FlareEffects
+     * @private
+     */
     initFlares() {
         this.glowElements.forEach((glowObject) => {
             this.addFlareEvents(glowObject)
         })
     }
 
+    /**
+     * Add MouseMove and MouseLeave EventHandler to the given glowObject
+     * @param {object} glowObject Object containing the Element and its default background
+     * @private
+     */
     addFlareEvents(glowObject) {
         this.resetBackground(glowObject);
 
         const { element } = glowObject;
 
+        let glowHandler = (e) => {};
+
         if(! this.options.fluentFlares){
-            element.addEventListener('mousemove', (e) => { this.handleFlareEvent(e, glowObject); })
-
+            glowHandler = (e) => this.handleFlareEvent(e, glowObject);
         } else {
-            element.addEventListener('mousemove', (e) => {
-                this.glowElements.forEach((g) => {
-                    this.handleFlareEvent(e, g);
-                })
-            })
+            glowHandler = (e) => {
+                this.glowElements.forEach((g) => { this.handleFlareEvent(e, g); });
+            };
         }
-        element.addEventListener('mouseleave', () => { this.resetBackground( glowObject ); })
+
+        element.addEventListener('mousemove', glowHandler)
+        const leaveHandler = () => this.resetBackground(glowObject);
+        element.addEventListener('mouseleave', leaveHandler)
+
+        this.eventHandlers.push({element: element, event: 'mousemove', eventHandler: glowHandler});
+        this.eventHandlers.push({element: element, event: 'mouseleave', eventHandler: leaveHandler});
     }
 
+    /**
+     * Set the Elements background to its default Value
+     * @param {object} glowObject Object containing the Element and its default background
+     * @private
+     */
     resetBackground(glowObject) {
-        const { element, background } = glowObject;
+        if(this.isPaused) return;
 
-        element.style.background = background;
+        const { element, defaultBackground } = glowObject;
+
+        element.style.background = defaultBackground;
     }
 
+    /**
+     * Handle the MouseMove Event
+     * @param {event} event MouseMove Event to calculate x and y
+     * @param {object} glowObject Object containing the Element and its default background
+     * @private
+     */
     handleFlareEvent(event, glowObject) {
-        const { element, background } = glowObject;
+        if(this.isPaused) return;
+
+        const { element, defaultBackground } = glowObject;
 
         let x = event.pageX - element.offsetLeft;
         let y = event.pageY + document.querySelector('body').scrollTop - element.offsetTop;
 
-        element.style.background = this.generateGradientString(x, y, background);
+        element.style.background = this.generateGradientString(x, y, defaultBackground);
     }
 
     /**
@@ -56,6 +147,6 @@ export default class FlareJS {
      */
     generateGradientString(x, y, background) {
         const xy = x + ' ' + y;
-        return `radial-gradient(circle ${this.options.glowRadius}px at ${x}px ${y}px, ${this.options.flareColor}, ${background})`;
+        return `radial-gradient(circle ${this.glowRadius}px at ${x}px ${y}px, ${this.flareColor}, ${background})`;
     }
 }
