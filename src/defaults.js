@@ -1,8 +1,8 @@
-
-const defaults  = {
-    glowRadius: 100,
-    backgroundColor: 'rgb(0, 0, 0)',
-    flareColor: 'rgba(255, 255, 255, 0.5)'
+const defaults = {
+    glowRadius: 50,
+    bgColor: null,
+    flareColor: 'rgba(254, 1, 154, 0.5)',
+    fluentFlares: false,
 }
 
-export default defaults;
+export default defaults

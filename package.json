@@ -1,38 +1,43 @@
 {
-  "name": "flarejs",
-  "version": "1.0.0",
-  "homepage": "https://github.com/sims2001/flarejs",
-  "repository": "https://github.com/sims2001/flarejs",
-  "bugs": {
-    "url": "https://github.com/sims2001/flarejs/issues"
-  },
-  "license": "MIT",
-  "author": "Simon Rutschka",
-  "description": "A small JavaScript Library that allows the user to add a radiant background flare to selected elements that moves with the mouse.",
-  "type": "module",
-  "source": "src/flare.js",
-  "types": "./index.d.ts",
-  "files": [
-    "dist",
-    "index.d.ts"
-  ],
-  "exports": {
-    "require": "./dist/flarejs.cjs",
-    "import": "./dist/flarejs.module.js",
-    "types": "./index.d.ts"
-  },
-  "main": "./dist/flarejs.cjs",
-  "module": "./dist/flarejs.module.js",
-  "keywords": [
-    "flarejs",
-    "animation",
-    "background-flare"
-  ],
-  "devDependencies": {
-    "microbundle": "^0.15.1"
-  },
-  "scripts": {
-    "build": "microbundle --name=FlareJS",
-    "dev": "microbundle --name=FlareJS watch"
-  }
+    "name": "flare.js",
+    "version": "0.1.0",
+    "homepage": "https://github.com/sims2001/flarejs",
+    "repository": "https://github.com/sims2001/flarejs",
+    "bugs": {
+        "url": "https://github.com/sims2001/flarejs/issues"
+    },
+    "license": "MIT",
+    "author": "Simon Rutschka",
+    "description": "A JavaScript background Flare Animation Library",
+    "type": "module",
+    "source": "src/flare.js",
+    "types": "./index.d.ts",
+    "files": [
+        "dist",
+        "index.d.ts"
+    ],
+    "exports": {
+        "require": "./dist/flarejs.cjs",
+        "import": "./dist/flarejs.module.js",
+        "types": "./index.d.ts"
+    },
+    "main": "./dist/flarejs.cjs",
+    "module": "./dist/flarejs.module.js",
+    "keywords": [
+        "flarejs",
+        "animation",
+        "background-flare",
+        "shimmer"
+    ],
+    "devDependencies": {
+        "microbundle": "^0.15.1",
+        "prettier": "3.3.3"
+    },
+    "scripts": {
+        "build": "microbundle --name=FlareJS --external none",
+        "dev": "microbundle --name=FlareJS watch"
+    },
+    "dependencies": {
+        "css-color-converter": "^2.0.0"
+    }
 }

@@ -1,19 +1,45 @@
-import defaults from "./defaults.js";
-import Flare from "./flare.js";
+import defaults from './defaults.js'
+import { fromString } from "css-color-converter";
 
-export default class Initializer {
-
+class Initializer {
     load(self, options, selector) {
-        self.glowGrounds = document.querySelectorAll(selector);
+        self.selector = selector;
 
-        if(! self.glowGrounds.length){
-            console.error("No elements found.");
+        const elements = document.querySelectorAll(selector);
+        if (! elements.length) {
+            return;
         }
 
-        self.options = { ...defaults, ...options };
+        self.options = { ...defaults, ...options }
 
+
+        //SETUP ELEMENTS
+        self.glowElements = [];
+        elements.forEach((ele) => {
+            const elementBackground = window.getComputedStyle( ele, null ).getPropertyValue("background-color");
+
+            let configBackground = self.options.bgColor;
+
+            if(configBackground !== null){
+                configBackground = fromString(configBackground).toRgbString();
+            }
+
+            const background = configBackground === null ? elementBackground : configBackground;
+
+            const newGlowElement = {
+                element: ele,
+                background: background
+            }
+
+            self.glowElements.push( newGlowElement );
+        })
+
+
+        self.glowRadius = self.options.glowRadius;
+        self.flareColor = fromString( self.options.flareColor ).toRgbString();
+
+        self.initialized = true;
     }
-
 }
 
-export let initializer = new Initializer();
+export const initializer = new Initializer()
