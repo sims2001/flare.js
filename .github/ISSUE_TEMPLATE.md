@@ -8,6 +8,7 @@ If your issue is not created using the format below, it will be closed.
 [Description of the issue]
 
 ### Demo
+
 [If possible, include a demo of your issue in a JSFiddle]
 
 ### Steps to Reproduce

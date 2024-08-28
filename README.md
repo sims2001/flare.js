@@ -4,12 +4,12 @@
 
 ### [View Demos](https://sims2001.github.io/flarejs/) | [View Full Docs](https://sims2001.github.io/flarejs/docs) | [rutschka.at](https://www.rutschka.at)
 
-
 FlareJS is small JavaScript Library that allows the user to add a radiant background flare to selected Elements that moves with the mouse.
 
 ---
 
 ## Installation
+
 ### CDN
 
 ```html
@@ -61,6 +61,7 @@ const flare = new FlareJS('.background', {
     flareColor: '#ffaa0075',
 });
 ```
+
 ## Customization
 
 ```javascript
@@ -70,12 +71,12 @@ const flare = new FlareJs('.background', {
      */
     glowRadius: 50,
     /**
-     * @property {string|null} bgColor CSS Color used as elements background color  
+     * @property {string|null} bgColor CSS Color used as elements background color
      * (if null current background color is used)
      */
     bgColor: null,
     /**
-     * @property {string} flareColor CSS Color for the FlareEffect 
+     * @property {string} flareColor CSS Color for the FlareEffect
      */
     flareColor: 'rgba(254, 1, 154, 0.5)',
     /**
@@ -106,14 +107,13 @@ const flare = new FlareJs('.background', {
 });
 ```
 
-
 ## Contributing
 
 ### [View Contribution Guidelines](./.github/CONTRIBUTING.md)
 
 ## end
 
-Thanks for checking this out. 
+Thanks for checking this out.
 
 If you're using this, let me know! I'd love to see it.
 
