@@ -1,27 +1,25 @@
-import defaults from './defaults.js'
-import { fromString } from "css-color-converter";
-
+import defaults from './defaults.js';
+import { fromString } from 'css-color-converter';
 
 class Initializer {
     load(self, options, selector) {
         self.selector = selector;
 
         const elements = document.querySelectorAll(selector);
-        if (! elements.length) {
+        if (!elements.length) {
             return;
         }
 
-        self.options = { ...defaults, ...options }
-
+        self.options = { ...defaults, ...options };
 
         //SETUP ELEMENTS
         self.glowElements = [];
         elements.forEach((ele) => {
-            const elementBackground = window.getComputedStyle( ele, null ).getPropertyValue("background-color");
+            const elementBackground = window.getComputedStyle(ele, null).getPropertyValue('background-color');
 
             let configBackground = self.options.bgColor;
 
-            if(configBackground !== null){
+            if (configBackground !== null) {
                 configBackground = fromString(configBackground).toRgbString();
             }
 
@@ -29,15 +27,14 @@ class Initializer {
 
             const newGlowElement = {
                 element: ele,
-                defaultBackground: background
-            }
+                defaultBackground: background,
+            };
 
-            self.glowElements.push( newGlowElement );
-        })
-
+            self.glowElements.push(newGlowElement);
+        });
 
         self.glowRadius = self.options.glowRadius;
-        self.flareColor = fromString( self.options.flareColor ).toRgbString();
+        self.flareColor = fromString(self.options.flareColor).toRgbString();
 
         self.eventHandlers = [];
 
@@ -47,4 +44,4 @@ class Initializer {
     }
 }
 
-export const initializer = new Initializer()
+export const initializer = new Initializer();

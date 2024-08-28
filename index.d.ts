@@ -7,7 +7,7 @@ declare module 'flare.js' {
         /**
          * Background color of the element (if null current Background color is taken)
          */
-        bgColor?: null|string;
+        bgColor?: null | string;
         /**
          * Color of the Background Flare (prefered rgba)
          */

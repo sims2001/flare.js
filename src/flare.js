@@ -1,6 +1,4 @@
-import {initializer} from './initialiser.js'
-
-
+import { initializer } from './initialiser.js';
 
 /**
  * Welcome to Flare.js!
@@ -10,9 +8,9 @@ import {initializer} from './initialiser.js'
  */
 export default class FlareJS {
     constructor(elementSelector, options) {
-        initializer.load(this, options, elementSelector)
+        initializer.load(this, options, elementSelector);
 
-        if(this.initialized) this.initFlares()
+        if (this.initialized) this.initFlares();
         else console.error("Couldn't initialize FlareJS");
     }
 
@@ -29,7 +27,7 @@ export default class FlareJS {
      * @public
      */
     start() {
-        if(! this.isPaused) return;
+        if (!this.isPaused) return;
         this.isPaused = false;
         this.options.onStart(this);
     }
@@ -39,18 +37,19 @@ export default class FlareJS {
      * @public
      */
     stop() {
-        if(this.isPaused) return;
+        if (this.isPaused) return;
         this.isPaused = true;
-        this.glowElements.forEach((glowObject) => { this.resetBackground(glowObject) });
+        this.glowElements.forEach((glowObject) => {
+            this.resetBackground(glowObject);
+        });
         this.options.onStop(this);
     }
-
 
     /**
      * Destroy FlareJS and remove all EventHandlers;
      * @public
      */
-    destroy()  {
+    destroy() {
         this.eventHandlers.forEach(({ element, event, eventHandler }) => {
             element.removeEventListener(event, eventHandler);
         });
@@ -58,7 +57,6 @@ export default class FlareJS {
         this.initialized = false;
         this.options.onDestroy(this);
     }
-
 
     /**
      * Reset FlareJS to add EventHandlers to new Elements
@@ -76,8 +74,8 @@ export default class FlareJS {
      */
     initFlares() {
         this.glowElements.forEach((glowObject) => {
-            this.addFlareEvents(glowObject)
-        })
+            this.addFlareEvents(glowObject);
+        });
     }
 
     /**
@@ -92,20 +90,22 @@ export default class FlareJS {
 
         let glowHandler = (e) => {};
 
-        if(! this.options.fluentFlares){
+        if (!this.options.fluentFlares) {
             glowHandler = (e) => this.handleFlareEvent(e, glowObject);
         } else {
             glowHandler = (e) => {
-                this.glowElements.forEach((g) => { this.handleFlareEvent(e, g); });
+                this.glowElements.forEach((g) => {
+                    this.handleFlareEvent(e, g);
+                });
             };
         }
 
-        element.addEventListener('mousemove', glowHandler)
+        element.addEventListener('mousemove', glowHandler);
         const leaveHandler = () => this.resetBackground(glowObject);
-        element.addEventListener('mouseleave', leaveHandler)
+        element.addEventListener('mouseleave', leaveHandler);
 
-        this.eventHandlers.push({element: element, event: 'mousemove', eventHandler: glowHandler});
-        this.eventHandlers.push({element: element, event: 'mouseleave', eventHandler: leaveHandler});
+        this.eventHandlers.push({ element: element, event: 'mousemove', eventHandler: glowHandler });
+        this.eventHandlers.push({ element: element, event: 'mouseleave', eventHandler: leaveHandler });
     }
 
     /**
@@ -114,7 +114,7 @@ export default class FlareJS {
      * @private
      */
     resetBackground(glowObject) {
-        if(this.isPaused) return;
+        if (this.isPaused) return;
 
         const { element, defaultBackground } = glowObject;
 
@@ -128,7 +128,7 @@ export default class FlareJS {
      * @private
      */
     handleFlareEvent(event, glowObject) {
-        if(this.isPaused) return;
+        if (this.isPaused) return;
 
         const { element, defaultBackground } = glowObject;
 

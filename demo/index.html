@@ -2,10 +2,7 @@
 <html class="w-100 h-100 p-0" lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <link
@@ -15,29 +12,24 @@
             crossorigin="anonymous"
         />
 
-        <style>
-        </style>
-        <script src="../dist/flarejs.umd.js" ></script>
+        <style></style>
+        <script src="../dist/flarejs.umd.js"></script>
         <title>FlareJS Demo</title>
     </head>
 
     <body class="w-100 h-100 p-0">
         <div class="container-fluid h-100">
             <div class="row h-100 p-0">
-                <div class="col-lg-6 h-100 light-backgrounds bg-dark">
-                </div>
-                <div class="col-lg-6 h-100 dark-backgrounds">
-                </div>
+                <div class="col-lg-6 h-100 light-backgrounds bg-dark"></div>
+                <div class="col-lg-6 h-100 dark-backgrounds"></div>
             </div>
             <div class="row h-100 p-0">
-                <div class="col-lg-6 h-100 light-backgrounds">
-                </div>
-                <div class="col-lg-6 h-100 light-backgrounds bg-light">
-                </div>
+                <div class="col-lg-6 h-100 light-backgrounds"></div>
+                <div class="col-lg-6 h-100 light-backgrounds bg-light"></div>
             </div>
         </div>
 
-        <script >
+        <script>
             //import FlareJS from '../src/flare.js'
             const secondFlare = new FlareJS('.light-backgrounds', {
                 glowRadius: 75,
@@ -45,7 +37,7 @@
                 //bgColor: '#faa',
                 //fluentFlares: true,
             });
-            const defaultFlare = new FlareJS('.dark-backgrounds', {})
+            const defaultFlare = new FlareJS('.dark-backgrounds', {});
         </script>
     </body>
 </html>

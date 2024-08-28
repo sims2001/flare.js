@@ -6,7 +6,7 @@ const defaults = {
     onDestroy: (self) => {},
     onReset: (self) => {},
     onStop: (self) => {},
-    onStart: (self) => {}
-}
+    onStart: (self) => {},
+};
 
-export default defaults
+export default defaults;
