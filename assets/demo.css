@@ -8,6 +8,10 @@ body {
     min-height: 250px;
 }
 
+.full {
+    min-height: 250px;
+}
+
 .experimental {
     height: 200px;
     padding: 0;
