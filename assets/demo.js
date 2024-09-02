@@ -40,6 +40,39 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('destroy').addEventListener('click', () => {
         fullFlare.destroy();
     });
+
+
+    const fullscreenBase = document.querySelector('.fullscreen-base');
+    const fullscreenButtons = document.querySelectorAll('.fullscreen-button');
+
+    fullscreenButtons.forEach((b) => {
+        b.addEventListener('click', (e) => {
+            const selector = b.dataset.toggle;
+            const isFullScreen = document.body.dataset.fullscreen === 'true';
+
+            const img = b.querySelector('img');
+
+            const element = document.getElementById(selector);
+
+            console.log("Toggling Fullscreen!");
+
+            if(isFullScreen) {
+                fullscreenBase.classList.add('d-none');
+                element.classList.remove('fullscreen');
+                img.src = 'assets/arrows-angle-expand.svg';
+                document.body.classList.remove('no-scroll');
+                document.body.dataset.fullscreen = 'false';
+            } else {
+                fullscreenBase.classList.remove('d-none');
+                element.classList.add('fullscreen');
+                img.src = 'assets/arrows-angle-contract.svg';
+                document.body.classList.add('no-scroll');
+                document.body.dataset.fullscreen = 'true';
+                window.scrollTo(0, 0);
+            }
+
+        });
+    });
 });
 
 function prettyLog(str, obj) {

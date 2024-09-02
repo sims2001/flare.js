@@ -18,7 +18,8 @@
         <title>FlareJS Demo</title>
     </head>
 
-    <body>
+    <body data-fullscreen="false" >
+        <div class="fullscreen fullscreen-base d-none"></div>
         <div class="container mt-5 pt-5">
             <div class="row">
                 <h1 class="flare-heading">Flare.js</h1>
@@ -30,7 +31,11 @@
                 <h3 class="flare-heading">Basic Example</h3>
             </div>
             <div class="row">
-                <div class="col-lg-6 base border"></div>
+                <div class="col-lg-6 p-0 base border d-flex align-items-end justify-content-end" id="baseDemo">
+                    <button class="fullscreen-button" data-toggle="baseDemo">
+                        <img src="assets/arrows-angle-expand.svg" alt="Toggle Fullscreen" />
+                    </button>
+                </div>
                 <div class="col-lg-6">
                     <pre class="m-0 p-0">
                     <code class="javascript">
@@ -46,7 +51,11 @@ const baseFlare = new FlareJS('.first', {});
                 <h3 class="flare-heading">Full Example</h3>
             </div>
             <div class="row">
-                <div class="col-lg-6 full border"></div>
+                <div class="col-lg-6 p-0 full border d-flex align-items-end justify-content-end" id="fullDemo">
+                    <button class="fullscreen-button" data-toggle="fullDemo">
+                        <img src="assets/arrows-angle-expand.svg" alt="Toggle Fullscreen" />
+                    </button>
+                </div>
                 <div class="col-lg-6">
                     <pre class="m-0 p-0">
                     <code class="javascript">
@@ -95,11 +104,15 @@ const fullFlare = new FlareJS('.full', {
             </div>
             <div class="row">
                 <div class="col-lg-6 border">
-                    <div class="row">
+                    <div class="row experimental-container" id="experimentalDemo">
                         <div class="col-lg-6 experimental experimental-first"></div>
                         <div class="col-lg-6 experimental experimental-second"></div>
                         <div class="col-lg-6 experimental experimental-third"></div>
-                        <div class="col-lg-6 experimental experimental-fourth"></div>
+                        <div class="col-lg-6 experimental experimental-fourth d-flex justify-content-end align-items-end">
+                            <button class="fullscreen-button" data-toggle="experimentalDemo">
+                                <img src="assets/arrows-angle-expand.svg" alt="Toggle Fullscreen" />
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
