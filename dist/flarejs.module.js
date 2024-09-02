@@ -253,8 +253,8 @@ var e,
                 d = /^#([0-9a-fA-F])([0-9a-fA-F])([0-9a-fA-F])([0-9a-fA-F])?$/,
                 c = /^rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)(?:\s*,\s*(0|1|0?\.\d+|\d+%))?\s*\)$/,
                 g = /^rgba?\(\s*(\d+)\s+(\d+)\s+(\d+)(?:\s*\/\s*(0|1|0?\.\d+|\d+%))?\s*\)$/,
-                h = /^rgba?\(\s*(\d+%)\s*,\s*(\d+%)\s*,\s*(\d+%)(?:\s*,\s*(0|1|0?\.\d+|\d+%))?\s*\)$/,
-                p = /^rgba?\(\s*(\d+%)\s+(\d+%)\s+(\d+%)(?:\s*\/\s*(0|1|0?\.\d+|\d+%))?\s*\)$/,
+                p = /^rgba?\(\s*(\d+%)\s*,\s*(\d+%)\s*,\s*(\d+%)(?:\s*,\s*(0|1|0?\.\d+|\d+%))?\s*\)$/,
+                h = /^rgba?\(\s*(\d+%)\s+(\d+%)\s+(\d+%)(?:\s*\/\s*(0|1|0?\.\d+|\d+%))?\s*\)$/,
                 f = /^hsla?\(\s*(\d+)(deg|rad|grad|turn)?\s*,\s*(\d+)%\s*,\s*(\d+)%(?:\s*,\s*(0|1|0?\.\d+|\d+%))?\s*\)$/;
             function m(e, t) {
                 return e.indexOf(t) > -1;
@@ -441,9 +441,9 @@ var e,
                                 (o = (o && (parseInt(o.length < 2 ? o.repeat(2) : o, 16) / 255).toPrecision(1)) || 1),
                             ]);
                         })(e)
-                      : c.test(e) || h.test(e) || g.test(e) || p.test(e)
+                      : c.test(e) || p.test(e) || g.test(e) || h.test(e)
                         ? (function (e) {
-                              var t = s(c.exec(e) || h.exec(e) || g.exec(e) || p.exec(e), 5),
+                              var t = s(c.exec(e) || p.exec(e) || g.exec(e) || h.exec(e), 5),
                                   r = t[1],
                                   n = t[2],
                                   a = t[3],
@@ -545,7 +545,7 @@ var e,
                 var r,
                     n = e.element;
                 n.addEventListener(
-                    'mousemove',
+                    'pointermove',
                     (r = this.options.fluentFlares
                         ? function (e) {
                               t.glowElements.forEach(function (r) {
@@ -559,7 +559,7 @@ var e,
                 var a = function () {
                     return t.resetBackground(e);
                 };
-                n.addEventListener('mouseleave', a),
+                n.addEventListener('pointerout', a),
                     this.eventHandlers.push({ element: n, event: 'mousemove', eventHandler: r }),
                     this.eventHandlers.push({ element: n, event: 'mouseleave', eventHandler: a });
             }),

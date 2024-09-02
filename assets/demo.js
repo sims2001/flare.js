@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         fullFlare.destroy();
     });
 
-
     const fullscreenBase = document.querySelector('.fullscreen-base');
     const fullscreenButtons = document.querySelectorAll('.fullscreen-button');
 
@@ -54,9 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const element = document.getElementById(selector);
 
-            console.log("Toggling Fullscreen!");
+            console.log('Toggling Fullscreen!');
 
-            if(isFullScreen) {
+            if (isFullScreen) {
                 fullscreenBase.classList.add('d-none');
                 element.classList.remove('fullscreen');
                 img.src = 'assets/arrows-angle-expand.svg';
@@ -70,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.body.dataset.fullscreen = 'true';
                 window.scrollTo(0, 0);
             }
-
         });
     });
 });

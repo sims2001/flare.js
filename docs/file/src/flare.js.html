@@ -167,9 +167,9 @@ export default class FlareJS {
             };
         }
 
-        element.addEventListener(&apos;mousemove&apos;, glowHandler);
+        element.addEventListener(&apos;pointermove&apos;, glowHandler);
         const leaveHandler = () =&gt; this.resetBackground(glowObject);
-        element.addEventListener(&apos;mouseleave&apos;, leaveHandler);
+        element.addEventListener(&apos;pointerout&apos;, leaveHandler);
 
         this.eventHandlers.push({ element: element, event: &apos;mousemove&apos;, eventHandler: glowHandler });
         this.eventHandlers.push({ element: element, event: &apos;mouseleave&apos;, eventHandler: leaveHandler });

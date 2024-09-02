@@ -570,7 +570,7 @@
                 var r,
                     n = e.element;
                 n.addEventListener(
-                    'mousemove',
+                    'pointermove',
                     (r = this.options.fluentFlares
                         ? function (e) {
                               t.glowElements.forEach(function (r) {
@@ -584,7 +584,7 @@
                 var a = function () {
                     return t.resetBackground(e);
                 };
-                n.addEventListener('mouseleave', a),
+                n.addEventListener('pointerout', a),
                     this.eventHandlers.push({ element: n, event: 'mousemove', eventHandler: r }),
                     this.eventHandlers.push({ element: n, event: 'mouseleave', eventHandler: a });
             }),
